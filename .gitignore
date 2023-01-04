@@ -3,6 +3,7 @@
 # IDEs
 /.idea
 /.vs
+README.old.md
 
 # dependencies
 /node_modules
