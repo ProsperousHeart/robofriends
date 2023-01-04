@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card.js';
+import './Card.css';
 
 /* returns the cards *
 const CardList = ({robots}) => {
