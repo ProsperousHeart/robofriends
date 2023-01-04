@@ -34,14 +34,33 @@ class App extends Component {
     }
 
     render() {
-        const filteredRobots = this.state.robots.filter(robot => {
-            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+        const { robots, searchfield } = this.state;
+        //const filteredRobots = this.state.robots.filter(robot => {
+        const filteredRobots = robots.filter(robot => {
+            // return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+            return robot.name.toLowerCase().includes(searchfield.toLowerCase());
         })
-        //console.log('3 - prior to render return');
-        if (this.state.robots.length === 0) { // referring to state of the app - loading bar
-            return <h1>Loading...</h1>
-        } else {
-            return (
+        ////console.log('3 - prior to render return');
+        //// if (this.state.robots.length === 0) { // referring to state of the app - loading bar
+        //// if (robots.length === 0) { // referring to state of the app - loading bar
+        //if (!robots.length) { // if length != 0 ... referring to state of the app - loading bar
+        //    return <h1>Loading...</h1>
+        //} else {
+        //    return (
+        //        <div className='tc'>
+        //            <h1 className='f1'>RoboFriends</h1>
+        //            <SearchBox searchChange={this.onSearchChange}/>
+        //            {/*<CardList robots={this.state.robots}/>*/}
+        //            <Scroll>
+        //                <CardList robots={filteredRobots}/>
+        //            </Scroll>
+        //        </div>
+        //    );
+        //}
+
+        return !robots.length ? // if length != 0 ... referring to state of the app - loading bar
+            <h1>Loading...</h1> :
+            (
                 <div className='tc'>
                     <h1 className='f1'>RoboFriends</h1>
                     <SearchBox searchChange={this.onSearchChange}/>
@@ -51,7 +70,6 @@ class App extends Component {
                     </Scroll>
                 </div>
             );
-        }
     }
 }
 
