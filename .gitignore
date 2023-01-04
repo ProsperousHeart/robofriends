@@ -4,6 +4,7 @@
 /.idea
 /.vs
 README.old.md
+/Files
 
 # dependencies
 /node_modules
