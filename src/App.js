@@ -37,7 +37,7 @@ class App extends Component {
             return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         })
         //console.log('3 - prior to render return');
-        if (this.state.robots.length === 0) { // referring to state of the app
+        if (this.state.robots.length === 0) { // referring to state of the app - loading bar
             return <h1>Loading...</h1>
         } else {
             return (
