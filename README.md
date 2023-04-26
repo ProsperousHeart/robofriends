@@ -1,13 +1,11 @@
 # robofriends
 A project created & tested via skills learned from these courses:
 1. [ZTM Web Dev Bootcamp](https://prosperousheart.com/ztm-web-dev-bc)
-2. [ZTM Complete Developer's Guide for Testing](https://prosperousheart.com/ZTM-Testing)
 
 Additional changes provided by the student - aka the repo owner. These changes include but are not limted to:
 - updates to the project
 - fixes to bugs
 - design change
-- writing additional tests
 
 <br>
 
